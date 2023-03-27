@@ -9,6 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var projectTableView: UITableView!
     
     let projects: [String] = ["Project 0"]
@@ -16,11 +18,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupTitle()
         setupTableView()
     }
     
     deinit {
         NSLog ("ViewController deinit called")
+    }
+    
+    private func setupTitle() {
+#if DEV_COMPILATION
+      descriptionLbl.text = "This is a Development Environment"
+#elseif TEST_COMPILATION
+      descriptionLbl.text = "This is a Test Environment"
+#else
+      descriptionLbl.text = "This is a Production Environment"
+#endif
     }
 
     private func setupTableView() {
