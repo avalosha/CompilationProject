@@ -24,6 +24,10 @@
 		6AAFCDAA29D237C60093198C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAFCD7B29D22F0F0093198C /* LaunchScreen.storyboard */; };
 		6AAFCDAB29D237C60093198C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AAFCD7929D22F0F0093198C /* Assets.xcassets */; };
 		6AAFCDAC29D237C60093198C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AAFCD7629D22F0E0093198C /* Main.storyboard */; };
+		6ABBC0ED2A0DAF4200F48346 /* contactBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABBC0EC2A0DAF4200F48346 /* contactBook.storyboard */; };
+		6ABBC0EE2A0DAF4200F48346 /* contactBook.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ABBC0EC2A0DAF4200F48346 /* contactBook.storyboard */; };
+		6ABBC0F02A0DAF9900F48346 /* ContactBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBC0EF2A0DAF9900F48346 /* ContactBookViewController.swift */; };
+		6ABBC0F12A0DAF9900F48346 /* ContactBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ABBC0EF2A0DAF9900F48346 /* ContactBookViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,8 @@
 		6AAFCD9329D22F100093198C /* CompilationUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompilationUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6AAFCDA029D232D20093198C /* ProjectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectCell.swift; sourceTree = "<group>"; };
 		6AAFCDB029D237C60093198C /* Compilation_Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compilation_Dev.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6ABBC0EC2A0DAF4200F48346 /* contactBook.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = contactBook.storyboard; sourceTree = "<group>"; };
+		6ABBC0EF2A0DAF9900F48346 /* ContactBookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactBookViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		6AAFCD6F29D22F0E0093198C /* Compilation */ = {
 			isa = PBXGroup;
 			children = (
+				6ABBC0EB2A0DAEB800F48346 /* ContactBook */,
 				6AAFCD7029D22F0E0093198C /* AppDelegate.swift */,
 				6AAFCD7229D22F0E0093198C /* SceneDelegate.swift */,
 				6AAFCD7429D22F0E0093198C /* ViewController.swift */,
@@ -144,6 +151,15 @@
 				6AAFCD9329D22F100093198C /* CompilationUITestsLaunchTests.swift */,
 			);
 			path = CompilationUITests;
+			sourceTree = "<group>";
+		};
+		6ABBC0EB2A0DAEB800F48346 /* ContactBook */ = {
+			isa = PBXGroup;
+			children = (
+				6ABBC0EC2A0DAF4200F48346 /* contactBook.storyboard */,
+				6ABBC0EF2A0DAF9900F48346 /* ContactBookViewController.swift */,
+			);
+			path = ContactBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +286,7 @@
 			files = (
 				6AAFCD7D29D22F0F0093198C /* LaunchScreen.storyboard in Resources */,
 				6AAFCD7A29D22F0F0093198C /* Assets.xcassets in Resources */,
+				6ABBC0ED2A0DAF4200F48346 /* contactBook.storyboard in Resources */,
 				6AAFCD7829D22F0E0093198C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,6 +311,7 @@
 			files = (
 				6AAFCDAA29D237C60093198C /* LaunchScreen.storyboard in Resources */,
 				6AAFCDAB29D237C60093198C /* Assets.xcassets in Resources */,
+				6ABBC0EE2A0DAF4200F48346 /* contactBook.storyboard in Resources */,
 				6AAFCDAC29D237C60093198C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABBC0F02A0DAF9900F48346 /* ContactBookViewController.swift in Sources */,
 				6AAFCD7529D22F0E0093198C /* ViewController.swift in Sources */,
 				6AAFCD7129D22F0E0093198C /* AppDelegate.swift in Sources */,
 				6AAFCD7329D22F0E0093198C /* SceneDelegate.swift in Sources */,
@@ -333,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ABBC0F12A0DAF9900F48346 /* ContactBookViewController.swift in Sources */,
 				6AAFCDA429D237C60093198C /* ViewController.swift in Sources */,
 				6AAFCDA529D237C60093198C /* AppDelegate.swift in Sources */,
 				6AAFCDA629D237C60093198C /* SceneDelegate.swift in Sources */,

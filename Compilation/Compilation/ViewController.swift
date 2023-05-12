@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var descriptionLbl: UILabel!
     @IBOutlet weak var projectTableView: UITableView!
     
-    let projects: [String] = ["Project 0"]
+    let projects: [String] = ["Open Whatsapp"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,6 +41,18 @@ class ViewController: UIViewController {
         projectTableView.dataSource = self
         projectTableView.reloadData()
     }
+    
+    private func openVC(with index: Int) {
+        switch index {
+        case 0:
+            if let vc = ContactBookViewController.newInstance(){
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
+            break
+        default:
+            break
+        }
+    }
 
 }
 
@@ -59,5 +71,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("Select: ",indexPath.row)
+        openVC(with: indexPath.row)
     }
 }
